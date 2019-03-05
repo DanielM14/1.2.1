@@ -22,10 +22,7 @@ public class FavoriteMediaLib{
                 index = songInfo.indexOf("|");
             }
 
-
         }
-
-
 
     }
 }

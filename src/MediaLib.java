@@ -59,14 +59,14 @@ public class MediaLib
         MediaFile.writeString(song6.getTitle()+ "|" + song6.getRating());
 
 
-        Song song7 =  new Song("Macaren", 1.29, 8);
+        Song song7 =  new Song("I Gotta Feeling", 1.29, 8);
         numSongs = numSongs + 1;
         totalCost = totalCost + song7.getPrice();
         totalRating = totalRating + song7.getRating();
         MediaFile.writeString(song7.getTitle()+ "|" + song7.getRating());
 
 
-        Song song8 =  new Song("Physical", .99, 9);
+        Song song8 =  new Song("Macroens", .99, 9);
         numSongs = numSongs + 1;
         totalCost = totalCost + song8.getPrice();
         totalRating = totalRating + song8.getRating();
