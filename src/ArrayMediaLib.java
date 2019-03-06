@@ -1,5 +1,8 @@
 public class ArrayMediaLib {
 
+    private static double Price;
+    private static int i;
+
     public static void main(String args[]){
 
         String[] sharingFriends = {"Jamal",
@@ -13,10 +16,27 @@ public class ArrayMediaLib {
         }
 
         int[] daysBtwnPurchase = {2, 5, 1, 2, 4, 2, 1, 3};
+
         int total = 0;
+        int avg = 0;
+
+        int[] arrayNum = {2, 2, 1, 3, 5, 4, 5, 3};
+
+        for (i = 0; i < arrayNum.length; ++i){
+            total = total + avg;
+        }
         for (int val: daysBtwnPurchase) {
             total = total + val;
         }
+        int count = 0;
+        int arrayCount = 0;
+
+        for (int i = 0; i < arrayCount; ++i)
+            if(count + 3 == 0){
+                Price = .99;
+            } else
+                Price = 1.29;
+        ++count;
 
         Song[] topTenSongs = {new Song(),
                 new Song("The Twist"),
@@ -26,7 +46,7 @@ public class ArrayMediaLib {
                 new Song("Party Rock Anthem"),
                 new Song("I Gotta Feeling"),
                 new Song("I Gotta Feeling"),
-                new Song("Macroens"),
+                new Song("Put a Date On It"),
                 new Song("You Light Up My Life"),
                 new Song("Hey Jude")
         };
@@ -34,7 +54,7 @@ public class ArrayMediaLib {
         {
             System.out.println(s.getTitle());
         }
-        System.out.println("-BEDORE-");
+        System.out.println("-BEFORE-");
         for (Song changSong : topTenSongs){
             changSong.setTitle("Test");
         }
