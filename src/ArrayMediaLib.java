@@ -62,5 +62,19 @@ public class ArrayMediaLib {
         for (Song showSong : topTenSongs){
             System.out.println(showSong.getTitle());
         }
+        int index = SongFinder.findTitle(topTenSongs, "Mack the Knife");
+        if (index >=0 ) {
+            System.out.println("Found " + topTenSongs[index].getTitle());
+        }
+        else  {
+            System.out.println("Song not found!");
+        }
+        index = SongFinder.getIndexLastDiscount(topTenSongs, 1.00);
+        if (index >= 0 ) {
+            System.out.println("Discount found " + topTenSongs[index].getTitle());
+        }
+        else {
+            System.out.println("No songs are discounted");
+        }
     }
 }
